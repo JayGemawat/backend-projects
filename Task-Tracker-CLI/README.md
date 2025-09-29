@@ -87,5 +87,3 @@ $ python3 task.py list in-progress
 
 ---
 
-## 📖 License
-This project is licensed under the MIT License – feel free to use, modify, and share.
