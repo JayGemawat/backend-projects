@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h2>Temperature Converter</h2>
+    <form method="post" target="_self">
+        <input type="number" step="any" name="value" required>
+        <select name="from_unit">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+        to
+        <select name="to_unit">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+        <button type="submit">Convert</button>
+    </form>
+
+    {% if result is not none %}
+        <p>Converted Value: <b>{{ result }}</b></p>
+    {% endif %}
+</body>
+</html>
